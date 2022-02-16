@@ -1,0 +1,68 @@
+#config-overlay {
+    text-align: center;
+}
+
+#config-overlay h2 {
+    margin: 0.5rem 0;
+}
+
+.form-control {
+    margin: 0.5rem 0;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control input {
+    font: inherit;
+    border: 1px solid rgb(204, 204, 204);
+    width: 15rem;
+    padding: 0.25rem;
+}
+
+#player-settings-section {
+    width: 90%;
+    max-width: 40rem;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+#player-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.player-card {
+    margin: 1rem;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #eee0fb;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.player-info {
+    margin-bottom: 0.5rem;
+}
+
+.player-info p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.player-info .player-name {
+    font-size: 1.5rem;
+    color: #6e48b9;
+}
+
+.player-info .player-symbol {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(47, 4, 82);
+}
