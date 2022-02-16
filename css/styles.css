@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #7723ef;
+    color: #fcf7ff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#player-settings-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player-settings-section button {
+    background-color: #7524f1;
+    border: 1px solid #7524f1;
+    color: #fae4ff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+}
+#player-settings-section button:hover {
+    background-color: #9457f0;
+    border-color:#9457f0;
+    color: #f6edf8;
+}
+
+#player-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.player-card {
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #eee0fb;
+}
+
+.player-info {
+    margin-bottom: 0.5rem;
+}
+
+.player-info p {
+    margin: 0.3rem 0;
+    font-weight: bold;
+}
+
+.player-info .player-name {
+    font-size: 1.5rem;
+    color: #6e48b9;
+}
+
+.player-info .player-symbol {
+    font-size: 1.5rem;
+}
+
+.player-card .player-edit-link {
+    text-decoration: none;
+    color: #7749c2;
+}
+
+.player-card .player-edit-link:hover {
+    color: #6933c0;
+}
+
+
