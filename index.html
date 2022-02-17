@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-tac-toe</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +16,9 @@
     <link rel="stylesheet" href="css/overlays.css" />
     <link rel="stylesheet" href="css/configuration.css" />
     <link rel="stylesheet" href="css/game.css" />
+
+    <script src="js/config.js" defer></script>
+    <script src="js/game.js" defer></script>
     <script src="js/app.js" defer></script>
   </head>
   <body>
@@ -31,9 +35,12 @@
             <label for="playername">Player name</label>
             <input type="text" name="playername" id="playername" />
           </div>
+          <p id="config-error"></p>
           <div>
-            <button type="button" class="btn btn-alt">Cancel</button>
-            <button type="submit" class="btn">Confirm</button>
+            <button type="reset" class="btn btn-alt" id="cancel-btn">
+              Cancel
+            </button>
+            <button type="submit" class="btn" id="submit-btn">Confirm</button>
           </div>
         </form>
       </aside>
@@ -42,18 +49,22 @@
           <div class="player-card">
             <div class="player-info">
               <p>Player 1</p>
-              <p id="first-player-name" class="player-name">PLAYER NAME</p>
+              <p id="player-1-name" class="player-name">PLAYER NAME</p>
               <p class="player-symbol">X</p>
             </div>
-            <button class="btn btn-alt">Edit</button>
+            <button class="btn btn-alt" id="edit-player-1" data-playerid="1">
+              Edit
+            </button>
           </div>
           <div class="player-card">
             <div class="player-info">
               <p>Player 2</p>
-              <p id="second-player-name" class="player-name">PLAYER NAME</p>
+              <p id="player-2-name" class="player-name">PLAYER NAME</p>
               <p class="player-symbol">O</p>
             </div>
-            <button class="btn btn-alt">Edit</button>
+            <button class="btn btn-alt" id="edit-player-2" data-playerid="2">
+              Edit
+            </button>
           </div>
         </div>
         <button id="btn-start-game" class="btn">Start New Game</button>
