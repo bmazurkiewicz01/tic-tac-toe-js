@@ -1,8 +1,10 @@
-#config-overlay {
+#config-overlay,
+#game-error {
     text-align: center;
 }
 
-#config-overlay h2 {
+#config-overlay h2,
+#game-error h2 {
     margin: 0.5rem 0;
 }
 

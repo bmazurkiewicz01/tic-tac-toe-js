@@ -1,12 +1,12 @@
 function openPlayerConfig(event) {
     playerId = +event.target.dataset.playerid;
 
-    modal.style.display = "block";
+    configModal.style.display = "block";
     backdrop.style.display = "block";
 }
 
 function closePlayerConfig() {
-    modal.style.display = "none";
+    configModal.style.display = "none";
     backdrop.style.display = "none";
 
     configForm.firstElementChild.classList.remove("error");
